@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI ChatBot</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="logo">
+      AI CHATBOT
+    </div>
+
+    <button class="new-chat">
+      + New Chat
+    </button>
+
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- CHAT AREA -->
+    <div class="chat-container" id="chat-container">
+
+      <div class="ai-message">
+        👋 Hello! How can I help you today?
+      </div>
+
+    </div>
+
+    <!-- INPUT AREA -->
+    <div class="input-area">
+
+      <!-- Upload -->
+      <input type="file" id="imageInput" hidden>
+
+      <button class="icon-btn"
+              onclick="document.getElementById('imageInput').click()">
+        📎
+      </button>
+
+      <!-- Text -->
+      <input
+        type="text"
+        id="prompt"
+        placeholder="Message AI..."
+      >
+
+      <!-- Send -->
+      <button class="send-btn"
+              onclick="sendMessage()">
+        Send
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
